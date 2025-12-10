@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 CareerForgeAI – AI-Powered Career Coaching Platform
 
-## Getting Started
+CareerForgeAI is a full-stack **AI-driven career coaching application** designed to help job seekers improve resumes, prepare for interviews, and generate professional cover letters—while receiving personalized, weekly industry insights. Built using **Next.js**, **Prisma**, **PostgreSQL (Neon)**, **Clerk**, **ShadCN UI**, and **Google Gemini AI**, CareerForgeAI delivers an end-to-end SaaS experience with enterprise-grade features.
 
-First, run the development server:
+---
 
-```bash
+## 📄 Summary
+
+This project is built following a detailed tutorial demonstrating how to create a modern AI-powered career development SaaS application. The app offers tools such as an **AI Resume Builder**, **Mock Interview Simulator**, **AI Cover Letter Generator**, and **personalized industry insights** updated weekly using background jobs with **Ingest**.
+
+Users complete an onboarding process with their skills, experience, industry, and bio. This fuels personalized AI responses and dynamic dashboards. Weekly cron jobs fetch real-time insights (salary trends, market outlook, growth rate, and top skills) through **Google Gemini AI**, keeping the data always up-to-date.
+
+Key AI modules include:
+
+- **ATS-optimized Resume Builder**
+- **AI-driven Mock Interview Engine** with progress tracking
+- **AI Cover Letter Generator** tailored to job descriptions
+- **Dynamic Industry Insights** updated weekly
+
+---
+
+## ⭐ Highlights
+
+- 🚀 Full-stack AI Career Coach with personalized onboarding  
+- 📝 AI-powered Resume Builder with markdown editor  
+- 🎯 Mock Interview system with performance analytics  
+- 💼 Cover Letter Generator from job descriptions  
+- 🔐 Seamless auth via Clerk  
+- ⏰ Weekly cron job via Ingest + Gemini AI  
+- 📊 Rich dashboards using Recharts  
+- 📄 Export resumes as PDF  
+
+---
+
+## 🔍 Key Insights
+
+### 🤖 AI Enhances Career Tools  
+Google Gemini automates resume content, interview questions, cover letters, and market insights—improving user outcomes significantly.
+
+### 📊 Dynamic Industry Insights  
+Weekly cron jobs keep salary trends, demand, outlook, and necessary skills always current.
+
+### 🛠 Scalable Full-Stack Architecture  
+Built with:
+- Next.js App Router  
+- Clerk Authentication  
+- Prisma ORM  
+- Neon PostgreSQL  
+- ShadCN UI  
+- Recharts  
+
+### 🔄 Strong Form Handling  
+React Hook Form + Zod delivers reliable validation across complex forms.
+
+### 🖋 Markdown Editing + PDF Export  
+Flexible resume editing with markdown preview and instant PDF generation.
+
+### 🖥 Deployment Workflow  
+The tutorial covers:
+- Vercel deployment  
+- Environment configuration  
+- Ingest task integration  
+
+---
+
+## 🧩 Tech Stack
+
+### Frontend
+- Next.js  
+- React  
+- ShadCN UI  
+- Tailwind CSS  
+- React Hook Form  
+- Zod  
+
+### Backend
+- Next.js Server Actions  
+- Prisma ORM  
+- Neon PostgreSQL  
+- Clerk Authentication  
+- Ingest Cron Jobs  
+
+### AI
+- Google Gemini API  
+- AI Resume Builder  
+- AI Interview Engine  
+- AI Cover Letter Generator  
+- AI Industry Insights  
+
+### Utilities
+- Recharts  
+- Markdown Editor (MDEditor)  
+- HTML-to-PDF Export  
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone
+
+git clone https://github.com/<your-username>/<repo>.git
+cd <repo>
+npm install
+
+### 2️⃣ Install
+npm install
+
+### 3️⃣ Environment Variables
+
+Create .env.local:
+
+DATABASE_URL=your_neon_db_url
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable
+CLERK_SECRET_KEY=your_clerk_secret
+GEMINI_API_KEY=your_gemini_api_key
+INGEST_API_KEY=your_ingest_key
+
+### 4️⃣ Prisma Migrate
+npx prisma migrate dev
+
+### 5️⃣ Run Dev
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
