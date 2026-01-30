@@ -61,7 +61,7 @@ const Header = async () => {
                 <DropdownMenuLabel>
                   <Link href={"/resume"} className="flex items-center gap-2">
                     <FileText className="h-4 w-4" />
-                    <span>Growth Tools</span>
+                    <span>Resume Builder</span>
                   </Link>
                 </DropdownMenuLabel>
                 <DropdownMenuLabel>
